@@ -1,6 +1,6 @@
 <?php
 
-namespace HieuLe\ActiveTest\Http;
+namespace Tyjow\ActiveTest\Http;
 
 use Closure;
 

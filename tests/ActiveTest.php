@@ -247,7 +247,7 @@ class ActiveTest extends TestCase
         return [
             'action is a controller method' => [
                 Request::create('/foo/bar'),
-                '\HieuLe\ActiveTest\Http\DumpController@indexMethod',
+                '\Tyjow\ActiveTest\Http\DumpController@indexMethod',
             ],
             'action is a closure'           => [
                 Request::create('/home'),
@@ -279,7 +279,7 @@ class ActiveTest extends TestCase
         return [
             'controller is a controller method' => [
                 Request::create('/foo/bar'),
-                '\HieuLe\ActiveTest\Http\DumpController',
+                '\Tyjow\ActiveTest\Http\DumpController',
             ],
             'controller is a closure'           => [
                 Request::create('/home'),
@@ -293,22 +293,22 @@ class ActiveTest extends TestCase
         return [
             'match the first inputted actions'  => [
                 Request::create('/foo/bar'),
-                '\HieuLe\ActiveTest\Http\DumpController@indexMethod',
+                '\Tyjow\ActiveTest\Http\DumpController@indexMethod',
                 true,
             ],
             'match the second inputted actions' => [
                 Request::create('/foo/bar'),
                 [
-                    '\HieuLe\ActiveTest\Http\DumpController@viewMethod',
-                    '\HieuLe\ActiveTest\Http\DumpController@indexMethod',
+                    '\Tyjow\ActiveTest\Http\DumpController@viewMethod',
+                    '\Tyjow\ActiveTest\Http\DumpController@indexMethod',
                 ],
                 true,
             ],
             'match no action'                   => [
                 Request::create('/foo/bar'),
                 [
-                    '\HieuLe\ActiveTest\Http\DumpController@viewMethod',
-                    '\HieuLe\ActiveTest\Http\DumpController@deleteMethod',
+                    '\Tyjow\ActiveTest\Http\DumpController@viewMethod',
+                    '\Tyjow\ActiveTest\Http\DumpController@deleteMethod',
                 ],
                 false,
             ],
@@ -320,12 +320,12 @@ class ActiveTest extends TestCase
         return [
             'match the first inputted controllers'  => [
                 Request::create('/foo/bar'),
-                '\HieuLe\ActiveTest\Http\DumpController',
+                '\Tyjow\ActiveTest\Http\DumpController',
                 true,
             ],
             'match the second inputted controllers' => [
                 Request::create('/foo/bar'),
-                ['Namespace\Child\Controller', '\HieuLe\ActiveTest\Http\DumpController'],
+                ['Namespace\Child\Controller', '\Tyjow\ActiveTest\Http\DumpController'],
                 true,
             ],
             'match no controller'                   => [
@@ -524,14 +524,14 @@ class ActiveTest extends TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \HieuLe\Active\ActiveServiceProvider::class,
+            \Tyjow\Active\ActiveServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Active' => \HieuLe\Active\Facades\Active::class,
+            'Active' => \Tyjow\Active\Facades\Active::class,
         ];
     }
 

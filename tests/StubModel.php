@@ -1,6 +1,6 @@
 <?php
 
-namespace HieuLe\ActiveTest;
+namespace Tyjow\ActiveTest;
 
 
 use Illuminate\Database\Eloquent\Model;
