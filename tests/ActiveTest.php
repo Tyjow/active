@@ -1,8 +1,8 @@
 <?php
 
-namespace HieuLe\ActiveTest;
+namespace Tyjow\ActiveTest;
 
-use HieuLe\Active\Active;
+use Tyjow\Active\Active;
 use Illuminate\Contracts\Http\Kernel as HttpKernelContract;
 use Illuminate\Http\Request;
 use Orchestra\Testbench\TestCase;
@@ -16,9 +16,9 @@ class ActiveTest extends TestCase
 
         app('router')->group(['middleware' => ['dump']], function () {
             app('router')->get('/foo/bar',
-                ['as' => 'foo.bar', 'uses' => '\HieuLe\ActiveTest\Http\DumpController@indexMethod']);
+                ['as' => 'foo.bar', 'uses' => '\Tyjow\ActiveTest\Http\DumpController@indexMethod']);
             app('router')->get('/foo/bar/{id}/view',
-                ['as' => 'foo.bar.view', 'uses' => '\HieuLe\ActiveTest\Http\DumpController@viewMethod']);
+                ['as' => 'foo.bar.view', 'uses' => '\Tyjow\ActiveTest\Http\DumpController@viewMethod']);
             app('router')->get('/home', [
                 'as'   => 'home',
                 'uses' => function () {
@@ -29,7 +29,7 @@ class ActiveTest extends TestCase
             app('router')->bind('model', function ($id) {
                 return new StubModel(['uid' => $id]);
             });
-            app('router')->get('/model/{model}', '\HieuLe\ActiveTest\Http\DumpController@viewMethod');
+            app('router')->get('/model/{model}', '\Tyjow\ActiveTest\Http\DumpController@viewMethod');
         });
     }
 

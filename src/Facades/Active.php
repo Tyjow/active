@@ -1,6 +1,6 @@
 <?php
 
-namespace HieuLe\Active\Facades;
+namespace Tyjow\Active\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

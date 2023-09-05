@@ -1,11 +1,11 @@
 Active for Laravel
 ======
 [![Build Status](https://travis-ci.org/letrunghieu/active.png?branch=master)](https://travis-ci.org/letrunghieu/active)
-[![Latest Stable Version](https://poser.pugx.org/hieu-le/active/v/stable.svg)](https://packagist.org/packages/hieu-le/active)
+[![Latest Stable Version](https://poser.pugx.org/tyjow/active/v/stable.svg)](https://packagist.org/packages/tyjow/active)
 [![Code Climate](https://codeclimate.com/github/letrunghieu/active/badges/gpa.svg)](https://codeclimate.com/github/letrunghieu/active)
 [![Test Coverage](https://codeclimate.com/github/letrunghieu/active/badges/coverage.svg)](https://codeclimate.com/github/letrunghieu/active/coverage)
-[![Total Downloads](https://poser.pugx.org/hieu-le/active/downloads.svg)](https://packagist.org/packages/hieu-le/active)
-[![License](https://poser.pugx.org/hieu-le/active/license.svg)](https://packagist.org/packages/hieu-le/active)
+[![Total Downloads](https://poser.pugx.org/tyjow/active/downloads.svg)](https://packagist.org/packages/tyjow/active)
+[![License](https://poser.pugx.org/tyjow/active/license.svg)](https://packagist.org/packages/tyjow/active)
 
 The helper class for Laravel applications to get active class base on current url.
 
@@ -23,20 +23,20 @@ Since version 7.0, the major version of this library will match the major versio
 Require this package as your dependencies:
 
 ```
-composer require hieu-le/active
+composer require tyjow/active
 ```
 > If you are using Laravel 5.5+, you do not need to manually register the ServiceProvider and Alias.
 
 Append this line to your `providers` array in `config/app.php`
 
 ```php
-HieuLe\Active\ActiveServiceProvider::class,
+Tyjow\Active\ActiveServiceProvider::class,
 ```
 
 Append this line to your `aliases` array in `config/app.php`
 
 ```php
-'Active' => HieuLe\Active\Facades\Active::class,
+'Active' => Tyjow\Active\Facades\Active::class,
 ```
 
 ## Usage

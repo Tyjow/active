@@ -1,5 +1,5 @@
 {
-  "name": "hieu-le/active",
+  "name": "tyjow/active",
   "description": "The helper class for Laravel applications to get active class base on current route",
   "keywords": [
     "laravel",
@@ -10,9 +10,8 @@
   "homepage": "https://www.hieule.info/tag/laravel-active/",
   "authors": [
     {
-      "name": "Hieu Le",
-      "email": "letrunghieu.cse09@gmail.com",
-      "homepage": "https://www.hieule.info"
+      "name": "Tyjow",
+      "email": "platon.jonathan@gmail.com"
     }
   ],
   "require": {
@@ -25,8 +24,8 @@
   },
   "autoload": {
     "psr-4": {
-      "HieuLe\\Active\\": "src/",
-      "HieuLe\\ActiveTest\\": "tests/"
+      "Tyjow\\Active\\": "src/",
+      "Tyjow\\ActiveTest\\": "tests/"
     },
     "files": [
       "src/helpers.php"
@@ -37,10 +36,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "HieuLe\\Active\\ActiveServiceProvider"
+        "Tyjow\\Active\\ActiveServiceProvider"
       ],
       "aliases": {
-        "Active": "HieuLe\\Active\\Facades\\Active"
+        "Active": "Tyjow\\Active\\Facades\\Active"
       }
     }
   }

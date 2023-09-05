@@ -1,6 +1,6 @@
 <?php
 
-namespace HieuLe\ActiveTest\Http;
+namespace Tyjow\ActiveTest\Http;
 
 class Kernel extends \Orchestra\Testbench\Http\Kernel
 {
